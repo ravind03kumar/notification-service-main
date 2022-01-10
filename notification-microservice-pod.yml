@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: notification-microservice
+  labels:
+    app: notification-microservice
+spec:
+  containers:
+    - name: notification-microservice
+      image: classpathio/notification-microservice
+      imagePullPolicy: IfNotPresent
+  restartPolicy: Always
